@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Perhitungan Zakat Fitrah</string>
+    <string name="zakat_intro">Zakat Fitrah di mana merupakan kewajiban yang harus dibayarkan oleh setiap umat muslim pada bulan Ramadan sebelum hari raya Idul Fitri.Adapun untuk zakat fitrah sendiri menunaikannya bisa dengan beras sebanyak 2,5 kg. Aplikasi ini disusun untuk memenuhi standar zakat Fitrah</string>
+    <string name="harga_beras">Harga beras (kg)</string>
+    <string name="total_jiwa">Total Jiwa (orang)</string>
+    <string name="hitung">Hitung</string>
+    <string name="harga_invalid">Harga tidak boleh kosong.</string>
+    <string name="jiwa_invalid">Jiwa tidak boleh kosong.</string>
+    <string name="reset">Reset</string>
+    <string name="harga">Harga: %1$s</string>
+</resources>
