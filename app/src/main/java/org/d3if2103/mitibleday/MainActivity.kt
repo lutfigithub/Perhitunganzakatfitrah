@@ -5,6 +5,7 @@ import android.text.TextUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import org.d3if2103.mitibleday.databinding.ActivityMainBinding
+import org.d3if2103.mitibleday.model.harga
 
 
 class MainActivity : AppCompatActivity() {
@@ -43,10 +44,20 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, R.string.jiwa_invalid, Toast.LENGTH_LONG).show()
             return
         }
-        val hasil = hargaberaszakat.toDouble()*2.5*jiwa.toDouble()
-        val hargaTotal = hasil.toInt().toString()
-        binding.hargaTextView.text = getString(R.string.harga,hargaTotal)
 
+        val result = hitungZakat(
+            hargaberaszakat.toDouble(),jiwa.toDouble()
+        )
+        showResult(result)
+
+    }
+
+    private fun hitungZakat(hargaBeras:Double,jiwa:Double):harga{
+        val hasil = hargaBeras*2.5*jiwa
+        return harga(hasil)
+    }
+    private fun showResult(result: harga){
+        binding.hargaTextView.text = getString(R.string.harga,result)
     }
 
 }
