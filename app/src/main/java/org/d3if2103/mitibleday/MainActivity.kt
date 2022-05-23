@@ -4,13 +4,19 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import org.d3if2103.mitibleday.databinding.ActivityMainBinding
 import org.d3if2103.mitibleday.model.harga
 
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
+
+
+    private val viewModel: MainViewModel by lazy {
+        ViewModelProvider(this)[MainViewModel::class.java]
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnHitung.setOnClickListener { hitungBmi() }
+        viewModel.getHasil().observe(this ) {showResult(it) }
         binding.btnReset.setOnClickListener { resetHarga() }
 
 
@@ -45,18 +52,13 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        val result = hitungZakat(
+        viewModel.hitungZakat(
             hargaberaszakat.toDouble(),jiwa.toDouble()
         )
-        showResult(result)
-
     }
 
-    private fun hitungZakat(hargaBeras:Double,jiwa:Double):harga{
-        val hasil = hargaBeras*2.5*jiwa
-        return harga(hasil)
-    }
-    private fun showResult(result: harga){
+    private fun showResult(result:harga?){
+        if (result == null) return
         binding.hargaTextView.text = getString(R.string.harga,result)
     }
 
