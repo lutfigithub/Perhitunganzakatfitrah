@@ -1,8 +1,9 @@
-package org.d3if2103.mitibleday.ui
+package org.d3if2103.mitibleday.ui.hitung
 
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -11,7 +12,9 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import org.d3if2103.mitibleday.R
 import org.d3if2103.mitibleday.databinding.FragmentHitungBinding
+import org.d3if2103.mitibleday.db.ZakatDb
 import org.d3if2103.mitibleday.model.harga
+import org.d3if2103.mitibleday.ui.HitungViewModel
 
 
 class HitungFragment : Fragment() {
@@ -33,8 +36,10 @@ class HitungFragment : Fragment() {
     }
 
 
-    private val viewModel: MainViewModel by lazy {
-        ViewModelProvider(this)[MainViewModel::class.java]
+    private val viewModel: HitungViewModel by lazy {
+        val db = ZakatDb.getInstance(requireContext())
+        val factory = HitungViewModelFactory(db.dao)
+        ViewModelProvider(this, factory)[HitungViewModel::class.java]
     }
     private fun shareData(){
         val message = getString(R.string.Bagikan_template,binding.hargaTextView.text)
@@ -65,6 +70,10 @@ class HitungFragment : Fragment() {
             )
         }
         viewModel.getHasil().observe(requireActivity() ) {showResult(it) }
+        viewModel.data.observe(viewLifecycleOwner) {
+            if (it == null) return@observe
+            Log.d("HitungFragment", "Data tersimpan. ID = ${it.id}")
+        }
         binding.btnReset.setOnClickListener { resetHarga() }
 
     }
