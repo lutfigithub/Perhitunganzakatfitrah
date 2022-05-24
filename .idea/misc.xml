@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/MitibleDay/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/MitibleDay/app/src/main/res/layout/activity_pindah.xml" value="0.23645833333333333" />
-        <entry key="..\:/MitibleDay/app/src/main/res/layout/fragment_hitung.xml" value="0.20863616930312098" />
+        <entry key="..\:/MitibleDay/app/src/main/res/layout/fragment_about.xml" value="0.25" />
+        <entry key="..\:/MitibleDay/app/src/main/res/layout/fragment_hitung.xml" value="0.2" />
+        <entry key="..\:/MitibleDay/app/src/main/res/layout/fragment_tuntunan.xml" value="0.20863616930312098" />
         <entry key="..\:/MitibleDay/app/src/main/res/layout/fragment_zakat.xml" value="0.20863616930312098" />
       </map>
     </option>

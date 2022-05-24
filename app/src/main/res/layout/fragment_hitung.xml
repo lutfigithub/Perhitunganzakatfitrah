@@ -42,7 +42,8 @@
                android:id="@+id/hargaBeras"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:hint="@string/harga_beras" />
+               android:hint="@string/harga_beras"
+               android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -59,7 +60,8 @@
                android:id="@+id/totalJiwa"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:hint="@string/total_jiwa" />
+               android:hint="@string/total_jiwa"
+               android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -115,5 +117,18 @@
             app:layout_constraintTop_toBottomOf="@+id/totalJiwaLayout" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/tuntunanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/tuntunan"
+            android:backgroundTint="@color/teal_700"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hargaTextView" />
+
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

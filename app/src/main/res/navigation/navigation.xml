@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/hitungFragment">
+
+    <fragment
+        android:id="@+id/hitungFragment"
+        android:name="org.d3if2103.mitibleday.ui.HitungFragment"
+        android:label="Aplikasi Zakat"
+        tools:layout="@layout/fragment_hitung" >
+        <action
+            android:id="@+id/action_hitungFragment_to_tuntunanFragment"
+            app:destination="@id/tuntunanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tuntunanFragment"
+        android:name="org.d3if2103.mitibleday.ui.TuntunanFragment"
+        android:label="Tuntunan Zakat"
+        tools:layout="@layout/fragment_tuntunan"/>
+</navigation>

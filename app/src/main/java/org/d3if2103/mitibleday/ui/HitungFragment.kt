@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import org.d3if2103.mitibleday.R
 import org.d3if2103.mitibleday.databinding.FragmentHitungBinding
 import org.d3if2103.mitibleday.model.harga
@@ -32,6 +33,11 @@ class HitungFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?){
 
         binding.btnHitung.setOnClickListener { hitungBmi() }
+        binding.tuntunanButton.setOnClickListener(){
+            it.findNavController().navigate(
+                R.id.action_hitungFragment_to_tuntunanFragment
+            )
+        }
         viewModel.getHasil().observe(requireActivity() ) {showResult(it) }
         binding.btnReset.setOnClickListener { resetHarga() }
 
@@ -63,9 +69,10 @@ class HitungFragment : Fragment() {
         )
     }
 
-    private fun showResult(result:harga?){
+    private fun showResult(result: harga?){
         if (result == null) return
-        binding.hargaTextView.text = getString(R.string.harga,result)
+        binding.hargaTextView.text = getString(R.string.harga,result.harga)
+        binding.tuntunanButton.visibility = View.VISIBLE
     }
 
 }

@@ -10,7 +10,7 @@ class MainViewModel : ViewModel() {
     private val hasilZakat = MutableLiveData<harga?>()
     fun hitungZakat(hargaBeras:Double,jiwa:Double) {
         val hasil = hargaBeras*2.5*jiwa
-        hasilZakat.value = harga(hasil)
+        hasilZakat.value = harga(hasil.toFloat())
     }
     fun getHasil(): LiveData<harga?> = hasilZakat
 }
