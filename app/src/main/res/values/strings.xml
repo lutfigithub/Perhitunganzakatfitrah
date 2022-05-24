@@ -7,19 +7,22 @@
     <string name="harga_invalid">Harga tidak boleh kosong.</string>
     <string name="jiwa_invalid">Jiwa tidak boleh kosong.</string>
     <string name="reset">Reset</string>
-    <string name="harga">Harga: %1$.1f</string>
-    <string name="tentang_saya">Halo semua nya, nama ku Lutfi, aku sekarang kuliah di Telkom University. Ini aplikasi Zakat Fitrah pertama yang aku buat, disini akan menampilkan tata cara Zakat Fitrah dan lainnya.
+    <string name="harga">Harga Zakat: %1$.1f</string>
+    <string name="tentang_aplikasi_saya">Halo semua nya, nama ku Lutfi, aku sekarang kuliah di Telkom University. Ini aplikasi Zakat Fitrah pertama yang aku buat, disini akan menampilkan tata cara Zakat Fitrah dan lainnya.
         (Instagram : @mhdllutfii) (Linkedin : @mhdlutfidev) (Twitter : mhdlutfidev) Follow aku yah ^_^</string>
     <string name="tuntunan_zakat">\nWaktu pengeluaran zakat fitrah dibagi menjadi 5\n
 
-\n1. Wajib, yaitu seseorang menemukan bagian dari bulan Ramadhan dan bagian dari bulan Syawal.\n
+    \n1. Wajib, yaitu seseorang menemukan bagian dari bulan Ramadhan dan bagian dari bulan Syawal.\n
 
-\n2. Diutamakan, yaitu setalah terbit fajar pada pagi hari hadi raya Idul Fitri sampai sebelum dilaksanakannya shalat Id. Lebih utama lagi ditunaikan setelah shalat fajar.\n
+    \n2. Diutamakan, yaitu setalah terbit fajar pada pagi hari hadi raya Idul Fitri sampai sebelum dilaksanakannya shalat Id. Lebih utama lagi ditunaikan setelah shalat fajar.\n
 
-\n3. Boleh, yaitu terhitung sejak memasuki awal bulan Ramadhan.\n
+    \n3. Boleh, yaitu terhitung sejak memasuki awal bulan Ramadhan.\n
 
-\n4. Makruh, yaitu membayar zakat setelah shalat Id sampai terbenamnya matahari.\n
+    \n4. Makruh, yaitu membayar zakat setelah shalat Id sampai terbenamnya matahari.\n
 
-\n5. Haram, yaitu membayar zakat sehari setelah hadi raya Idul Fitri tanpa adanya uzur (kendala yang dimaklumi).</string>
+    \n5. Haram, yaitu membayar zakat sehari setelah hadi raya Idul Fitri tanpa adanya uzur (kendala yang dimaklumi).</string>
     <string name="tuntunan">Tuntunan Zakat</string>
+    <string name="tentang_aplikasi">tentang aplikasi</string>
+    <string name="Bagikan">Bagikan</string>
+    <string name="Bagikan_template">%1$s</string>
 </resources>

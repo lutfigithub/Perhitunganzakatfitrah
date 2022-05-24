@@ -3,4 +3,4 @@
         android:id="@+id/aboutMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tentang_saya" />
+        android:text="@string/tentang_aplikasi_saya" />
