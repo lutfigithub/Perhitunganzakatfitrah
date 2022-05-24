@@ -1,4 +1,4 @@
-package org.d3if2103.mitibleday
+package org.d3if2103.mitibleday.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
