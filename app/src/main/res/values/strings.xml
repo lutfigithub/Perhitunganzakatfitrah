@@ -8,8 +8,7 @@
     <string name="jiwa_invalid">Jiwa tidak boleh kosong.</string>
     <string name="reset">Reset</string>
     <string name="harga">Harga Zakat: %1$.1f</string>
-    <string name="tentang_aplikasi_saya">Halo semua nya, nama ku Lutfi, aku sekarang kuliah di Telkom University. Ini aplikasi Zakat Fitrah pertama yang aku buat, disini akan menampilkan tata cara Zakat Fitrah dan lainnya.
-        (Instagram : @mhdllutfii) (Linkedin : @mhdlutfidev) (Twitter : mhdlutfidev) Follow aku yah ^_^</string>
+    <string name="tentang_aplikasi_saya">%1$s</string>
     <string name="tuntunan_zakat">\nWaktu pengeluaran zakat fitrah dibagi menjadi 5\n
 
     \n1. Wajib, yaitu seseorang menemukan bagian dari bulan Ramadhan dan bagian dari bulan Syawal.\n
@@ -25,4 +24,19 @@
     <string name="tentang_aplikasi">tentang aplikasi</string>
     <string name="Bagikan">Bagikan</string>
     <string name="Bagikan_template">%1$s</string>
+    <string name="belum_ada_data">Belum ada data</string>
+    <string name="histori">Histori</string>
+    <string name="koneksi_error">Koneksi error</string>
+    <string name="hasil_zakat_kamu">Hasil: %1$s</string>
+    <string name="berapa_jiwa">Berapa Jiwa: %1$s</string>
+    <string name="harga_per_kilo">Harga : %1$s</string>
+    <string name="hapus_histori">Hapus Histori</string>
+    <string name="konfirmasi_hapus">Hapus semua histori</string>
+    <string name="channel_name">Pengingat</string>
+    <string name="channel_desc">Pengingat Zakat Fitrah</string>
+    <string name="notif_title">Tunaikan Zakat Kamu</string>
+    <string name="notif_text">Jangan lupa untuk bayar Zakat Fitrah selama bulan puasa yaa ^_^</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
+    <string name="konfirmasi_hapus_histori">Apakah kamu yakin ingin menghapus histori ini?</string>
 </resources>

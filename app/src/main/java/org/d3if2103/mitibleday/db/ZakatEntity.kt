@@ -8,6 +8,6 @@ data class ZakatEntity(
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0L,
     var tanggal: Long = System.currentTimeMillis(),
-    var hargaBeras: Double,
-    var jiwa: Double
+    var hargaBeras: Float,
+    var jiwa: Float
 )
